@@ -44,6 +44,7 @@ const App = () => {
       {step === 1 && <Start onQuizStart={quizStartHandler} />}
       {step === 2 && <Question 
         data={quizData.data[activeQuestion]}
+        answers={answers}
         onAnswerUpdate={setAnswers}
         numberOfQuestions={quizData.data.length}
         activeQuestion={activeQuestion}
